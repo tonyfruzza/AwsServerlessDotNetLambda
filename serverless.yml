@@ -39,8 +39,6 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
   Outputs:
-    LambdaFunctionArn:
-      Value: !GetAtt [LookupLambdaFunction, Arn]
     StateManagerArn:
       Value: !GetAtt [stateManager, Arn]
     StateManagerName:
